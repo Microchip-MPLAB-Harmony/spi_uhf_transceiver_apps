@@ -1,0 +1,14 @@
+format_version: v1.0
+configName: default
+folderName: SAMC21_base
+frameworkPath: ..\..\..\..\..\..\..\..\Microchip\Harmony
+processor: ATSAMC21J18A
+projectName: SAMC21_base
+settings:
+  PackageFilter: ''
+  FORCE_OPTIMIZATION: 'false'
+  GENERATE_BACKUP: 'true'
+  TRUSTZONE: 'false'
+  CMSISPath: dev_packs\arm\CMSIS\5.8.0
+  MERGE_STRATEGY: USER_ALL
+  DFPPath: dev_packs\Microchip\SAMC21_DFP\3.8.119\samc21\atdf\ATSAMC21J18A.atdf

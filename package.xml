@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<Package name="replaceme">
+<Package name="spi_uhf_transceiver_apps">
     <Dependencies>
+        <Dependency name="spi_uhf_transceiver" version="v1.0.0"/>
+        <Dependency name="csp" version="v3.14.0"/>
+        <Dependency name="core" version="v3.11.1"/>
     </Dependencies>
 </Package>
