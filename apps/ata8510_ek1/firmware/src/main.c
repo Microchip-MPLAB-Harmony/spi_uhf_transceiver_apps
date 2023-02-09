@@ -11,18 +11,18 @@
     This file contains the "main" function for a project.
 
   Description:
-    This file contains the "main" function for a project. The responsibility of 
+    This file contains the "main" function for a project. The responsibility of
     the function is as mentioned below:
     -> Receiving temperature data packets and displaying it over OLED.
     -> Addressing the button press.
 
   Author:
     Somesh Singh (I20952)
- 
+
   Last date Modified:
     23-Nov-2022
- 
- 
+
+
  *******************************************************************************/
 
 // *****************************************************************************
@@ -94,7 +94,7 @@ struct rfstruct rf;
 ***********************************************************************************************************************/
 void cleaner(void){
     oled_clear();
-    memset(string, '\0', sizeof(string));    
+    memset(string, '\0', sizeof(string));
 }
 
 
@@ -320,7 +320,7 @@ int main ( void )
                 // evaluate data
                 rssi = 0;
                 if(rf.rssi_len > 5) rf.rssi_len = 5;
-                for(uint8_t index = 0; index < rf.rssi_len; index++) rssi += rf.rssi_buffer[index];
+                for(index = 0; index < rf.rssi_len; index++) rssi += rf.rssi_buffer[index];
                 rssi /= rf.rssi_len;
                 tot_count++;
                 // check received bytes with checksum and set err receive flag if wrong data
@@ -334,7 +334,7 @@ int main ( void )
                     data.b[0] = rf.rx_buffer[1];
                     data.b[1] = rf.rx_buffer[2];
                     msg_count++;
-                    
+
                     // prepare acknowledge packet
                     // set TX buffer and start tx for acknowledge
                     for (index=0; index < 6; index++)rf.tx_buffer[index] = 0xFF;
@@ -352,12 +352,12 @@ int main ( void )
                         delay_us(100);
                     } while((ATA5831_IRQ_Get() != 0) && (timeout < 300));
                     uhf_spi_get_event_bytes(&rf.event[0]);
-                    // set idle mode to clear status 
+                    // set idle mode to clear status
                     uhf_spi_set_system_mode(0x00, 0x00);
 
                     if(timeout < 300)
                     {
-                        //start receive mode 
+                        //start receive mode
                         uhf_spi_set_system_mode(RF_RXMODE, RF_TXSERVICE);
                         timeout=0;
                         do
@@ -369,11 +369,11 @@ int main ( void )
 
                         if(timeout < 400)
                         {
-                            // RF answer received 
-                            // read RX buffer 
+                            // RF answer received
+                            // read RX buffer
                             rf.rx_len = uhf_spi_read_fill_level_rx_fifo();
                             uhf_spi_read_rx_fifo(&rf.rx_buffer[0], rf.rx_len);
-                            // read RSSI buffer 
+                            // read RSSI buffer
                             rf.rssi_len= uhf_spi_read_fill_level_rssi_fifo();
                             uhf_spi_read_rssi_fifo(&rf.rssi_buffer[0], rf.rssi_len);
 
@@ -381,31 +381,40 @@ int main ( void )
                             {
                                 if(dtim > 99900L) dtim = 99900L;
                                 dt = (unsigned int) dtim / 100L;
-                                // show receive string 
+                                // show receive string
                                 cleaner();
-                                sprintf(string,"\r  dt=%3ds     rssi=%3d     \r\n                                \r\n          T=%3d'C            \r\n          RSSI=%3d         \r\n",
-                                dt, rssi, data.i[0] / 10, rf.rx_buffer[2]);								
+
+                                if(data.i[0] & 0x00008000)
+                                {    
+                                    data.i[0] |= 0xFFFF0000;
+                                }
+                                else
+                                {
+                                    data.i[0] &= 0x00007FFF;
+                                }
+                                sprintf(string,"\r     dt=%3ds    rssi=%3d   \r\n                                \r\n          T=%3d'C            \r\n          RSSI=%3d         \r\n",
+                                dt, rssi, data.i[0] / 10, rf.rx_buffer[2]);
                                 oled_string(string, 0, 0);
                                 SERCOM4_USART_Write(&string[0], sizeof(string));
                             }
-                            // if no sensor data available ... 
+                            // if no sensor data available ...
                             else if(rf.rx_buffer[0] == RF_NODATA)
                             {
                                 cleaner();
-                                sprintf(string, "!!!!!!!!!!!!!!!!!!!!!\r\n Sensor error:              \r\nInvalid sensor data!   \r\n!!!!!!!!!!!!!!!!!!!!!\r\n");
+                                sprintf(string,"!!!!!!!!!!!!!!!!!!!!!\r\n Sensor error:         \r\n Invalid sensor data! \r\n!!!!!!!!!!!!!!!!!!!!!\r\n");
                                 oled_string(string, 0, 0);
                                 SERCOM4_USART_Write(&string[0], sizeof(string));
-                                // increase error message counter 
+                                // increase error message counter
                                 err_count++;
                             }
-                            // sensor has low battery voltage 
+                            // sensor has low battery voltage
                             else if(rf.rx_buffer[0] == RF_LOWBATT)
                             {
                                 cleaner();
-                                sprintf(string,"!!!!!!!!!!!!!!!!!!!!!\r\n Sensor error:              \r\n Low battery voltage!   \r\n!!!!!!!!!!!!!!!!!!!!!\r\n");
+                                sprintf(string,"!!!!!!!!!!!!!!!!!!!!!\r\n Sensor error:         \r\n Low battery voltage! \r\n!!!!!!!!!!!!!!!!!!!!!\r\n");
                                 oled_string(string, 0, 0);
                                 SERCOM4_USART_Write(&string[0], sizeof(string));
-                                // increase error message counter 
+                                // increase error message counter
                                 err_count++;
                             }
                             else
@@ -414,53 +423,53 @@ int main ( void )
                                 sprintf(string,":::::::::::::::::::::\r\n RF telegram error:   \r\n Wrong ACK telegram!  \r\n:::::::::::::::::::::\r\n");
                                 oled_string(string, 0, 0);
                                 SERCOM4_USART_Write(&string[0], sizeof(string));
-                                // increase error message counter 
+                                // increase error message counter
                                 err_count++;
                             }
                         }
                         else
                         {
                             cleaner();
-                            sprintf(string,"::::::::::::::::::::::\r\n  RF telegram error:  \r\n No RF ACK telegram!   \r\n:::::::::::::::::::::\r\n");
+                            sprintf(string,"::::::::::::::::::::::\r\n RF telegram error:  \r\n No RF ACK telegram!   \r\n:::::::::::::::::::::\r\n");
                             oled_string(string, 0, 0);
                             SERCOM4_USART_Write(&string[0], sizeof(string));
-                            // increase error message counter 
+                            // increase error message counter
                             err_count++;
                         }
                     }
                     else
                     {
                         cleaner();
-                        sprintf(string,":::::::::::::::::::::\r\n RF channel error:     \r\n RF TX telegram err!   \r\n:::::::::::::::::::::\r\n");
+                        sprintf(string,":::::::::::::::::::::\r\n RF channel error:   \r\n RF TX telegram err!  \r\n:::::::::::::::::::::\r\n");
                         oled_string(string, 0, 0);
                         SERCOM4_USART_Write(&string[0], sizeof(string));
-                        // increase error message counter 
+                        // increase error message counter
                         err_count++;
                     }
                 }
                 else
                 {
                     cleaner();
-                    sprintf(string,":::::::::::::::::::::\r\n RF channel error:     \r\n Wrong ACK telegram!     \r\n::::::::::::::::::::: \r\n");
+                    sprintf(string,":::::::::::::::::::::\r\n RF channel error:  \r\n Wrong ACK telegram! \r\n:::::::::::::::::::::\r\n");
                     oled_string(string, 0, 0);
                     SERCOM4_USART_Write(&string[0], sizeof(string));
-                    // increase error message counter 
+                    // increase error message counter
                     err_count++;
                 }
             }
-            // switch transceiver into idle mode 
+            // switch transceiver into idle mode
             uhf_spi_set_system_mode(0x00, 0x00);
-            // wait for 1ms after idle mode 
+            // wait for 1ms after idle mode
             delay_ms(1);
-            // switch transceiver into polling mode 
+            // switch transceiver into polling mode
             uhf_spi_set_system_mode(RF_POLLINGMODE, 0x00);
         }
-        // check for button1 event 
+        // check for button1 event
         else if(at_test_btn(OLED_BTN1_PIN))
         {
             /*To stop blink the RF wait dots*/
             rf_packets_received = 1;
-            // switch IO led1 on 
+            // switch IO led1 on
             OLED_LED1_Clear();
             OLED_LED2_Set();
             OLED_LED3_Set();
@@ -468,7 +477,7 @@ int main ( void )
             sprintf(string,"\rRF-Channel 433.92MHz \r\nData Rate 8kBit/s       \r\nFSK deviation +/-8kHz \r\nManchester Coding     \r\n");
             oled_string(string, 0, 0);
             SERCOM4_USART_Write(&string[0], sizeof(string));
-            // check if button is released 
+            // check if button is released
             while(at_test_btn(OLED_BTN1_PIN))
             {
                 delay_ms(100);
