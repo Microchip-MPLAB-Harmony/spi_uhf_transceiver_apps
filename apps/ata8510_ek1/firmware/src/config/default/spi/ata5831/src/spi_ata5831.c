@@ -95,7 +95,7 @@ void delay_us(uint32_t us)
 
 void uhf_power_on(void)
 {
-    /* set UHF NPWRON1 line to wake-up device */
+    /* clear UHF NPWRON1 line to wake-up device */
     UHF_NPWRON1_CLEAR;
     /* clear and set NRES pin to initialize device */
     UHF_NRESET_CLEAR;
