@@ -1,0 +1,18 @@
+package:
+  format-version: "1.0.0"
+  name: "spi_uhf_transceiver_apps"
+  version: "1.0.0"
+  type: "application"
+  status: "beta"
+  required: false
+
+  dependencies:
+    - name: "spi_uhf_transceiver"
+      type: "package"
+      version: "1.0.0"
+    - name: "csp"
+      type: "package"
+      version: "3.14.0"
+    - name: "core"
+      type: "package"
+      version: "3.11.1"

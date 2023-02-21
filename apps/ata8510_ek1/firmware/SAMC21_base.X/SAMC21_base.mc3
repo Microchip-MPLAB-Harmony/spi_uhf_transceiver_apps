@@ -11121,7 +11121,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\spi\ata5831\spi_ata5831.h</file>
-         <hash>b3eda3e6d827e429c197e2715e363d4f3fadc0bfba9149a663acae96443b3d4b</hash>
+         <hash>693c065d3b37a69670e78974f45c20615df0ae5edf07d9d9e269ee0258c055d4</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMC21J18A_DFP\component\evsys.h</file>
@@ -11229,7 +11229,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\spi\ata5831\src\spi_ata5831.c</file>
-         <hash>6dd28fb2f76cd196e27f639e841bf5a1320c4bcfd41dcdbd0293ed0391fa7b5b</hash>
+         <hash>4ed71e3fce00305cb1e7ac085517c16bbfb875336baf1dbe571b7b13688f6793</hash>
       </entry>
       <entry>
          <file>..\src\config\default\peripheral\clock\plib_clock.c</file>
@@ -11337,7 +11337,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\spi\ata5831\src\spi_ata5831_local.h</file>
-         <hash>3ec36c52db6ab5110536b169bf18dcb61e07000d44a8a4590c0e93a590df9d4e</hash>
+         <hash>ba2a2f76e50fea32da3105eeed6de5bdb6fb3eaaaa923708824bacbeb15a0fa6</hash>
       </entry>
       <entry>
          <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_armclang.h</file>

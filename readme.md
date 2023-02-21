@@ -14,7 +14,7 @@ MPLAB® Harmony 3 is an extension of the MPLAB® ecosystem for creating embedded
 This repository contains the MPLAB® Harmony 3 SPI UHF transceiver solutions and example applications for Microchip's 32-bit SAMC21 microcontrollers. Users can use these examples as a reference for developing their own applications using MPLAB Harmony 3. Refer to the following links for release notes and licensing information.
 
 - [Release Notes](./release_notes.md)
-- [MPLAB® Harmony License](mplab_harmony_license.md)
+- [MPLAB® Harmony License](Microchip_SLA001.md)
 <!---
 - [MPLAB® Harmony 3 replaceme Wiki](https://github.com/Microchip-MPLAB-Harmony/replaceme/wiki)
 - [MPLAB® Harmony 3 replaceme API Help](https://microchip-mplab-harmony.github.io/replaceme)
@@ -40,7 +40,7 @@ The [ATA8510-EK1](https://www.microchip.com/en-us/development-tool/ATA8510-EK1) 
 | programming_files | Programming files for sensor board and base station to get the whole evaluation example running                       | [programming_files](./apps/ata8510_ek1/programming_files) |
 ____
 
-[![License](https://img.shields.io/badge/license-Harmony%20license-orange.svg)](https://github.com/Microchip-MPLAB-Harmony/spi_uhf_transceiver_apps/blob/master/mplab_harmony_license.md)
+[![License](https://img.shields.io/badge/license-Harmony%20license-orange.svg)](https://github.com/Microchip-MPLAB-Harmony/spi_uhf_transceiver_apps/blob/master/Microchip_SLA001.md)
 [![Latest release](https://img.shields.io/github/release/Microchip-MPLAB-Harmony/spi_uhf_transceiver_apps.svg)](https://github.com/Microchip-MPLAB-Harmony/spi_uhf_transceiver_apps/releases/latest)
 [![Latest release date](https://img.shields.io/github/release-date/Microchip-MPLAB-Harmony/spi_uhf_transceiver_apps.svg)](https://github.com/Microchip-MPLAB-Harmony/spi_uhf_transceiver_apps/releases/latest)
 [![Commit activity](https://img.shields.io/github/commit-activity/y/Microchip-MPLAB-Harmony/spi_uhf_transceiver_apps.svg)](https://github.com/Microchip-MPLAB-Harmony/spi_uhf_transceiver_apps/graphs/commit-activity)
