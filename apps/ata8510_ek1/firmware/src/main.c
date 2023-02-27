@@ -16,12 +16,6 @@
     -> Receiving temperature data packets and displaying it over OLED.
     -> Addressing the button press.
 
-  Author:
-    Somesh Singh (I20952)
-
-  Last date Modified:
-    23-Nov-2022
-
 
  *******************************************************************************/
 
@@ -262,7 +256,7 @@ uint8_t checksum(uint8_t data[], uint8_t len)
 ***********************************************************************************************************************/
 int main ( void )
 {
-    uint8_t timeout = 0;
+    uint16_t timeout = 0;
     uint16_t rssi = 0;
     uint8_t dt = 0;
     uint8_t index = 0;
