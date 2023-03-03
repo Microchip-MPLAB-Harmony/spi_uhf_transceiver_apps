@@ -204,11 +204,11 @@ typedef struct
     Delays program execution for a dedicated time.
 
   Description:
-    This function delays program execution for a dedicated time in ms. System
-    Time Service is used for delay generation.
+    This function delays program execution for a dedicated time in ms. Systick
+    periheral is used for delay generation.
 
   Remarks:
-    System Time has to be configured.
+    Systick peripheral in Time system service has to be enabled.
 */
 extern void delay_ms(uint32_t);
 
@@ -219,11 +219,11 @@ extern void delay_ms(uint32_t);
     Delays program execution for a dedicated time.
 
   Description:
-    This function delays program execution for a dedicated time in us. System
-    Time Service is used for delay generation.
+    This function delays program execution for a dedicated time in us. Systick
+    periheral is used for delay generation.
 
   Remarks:
-    System Time has to be configured.
+    Systick peripheral in Time system service has to be enabled.
 */
 extern void delay_us(uint32_t);
 

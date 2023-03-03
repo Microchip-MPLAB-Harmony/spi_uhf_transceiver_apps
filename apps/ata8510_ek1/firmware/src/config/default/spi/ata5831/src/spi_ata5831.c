@@ -77,20 +77,12 @@ static uint8_t g_rx_buf[UHF_SPI_BUFFER_LENGTH];
 
 void delay_ms(uint32_t ms)
 {
-    SYS_TIME_HANDLE timer = SYS_TIME_HANDLE_INVALID;
-
-    if (SYS_TIME_DelayMS(ms, &timer) != SYS_TIME_SUCCESS)
-        return;
-    while (SYS_TIME_DelayIsComplete(timer) == false);
+    SYSTICK_DelayMs(ms);
 }
 
 void delay_us(uint32_t us)
 {
-    SYS_TIME_HANDLE timer = SYS_TIME_HANDLE_INVALID;
-
-    if (SYS_TIME_DelayUS(us, &timer) != SYS_TIME_SUCCESS)
-        return;
-    while (SYS_TIME_DelayIsComplete(timer) == false);
+    SYSTICK_DelayUs(us);
 }
 
 void uhf_power_on(void)
