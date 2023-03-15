@@ -23,7 +23,7 @@ Following table provides number of peripheral library examples available for dif
 
 ### Development Tools
 
-- [MPLAB® X IDE v6.00](https://www.microchip.com/mplab/mplab-x-ide)
-- [MPLAB® XC32 C/C++ Compiler v4.10](https://www.microchip.com/mplab/compilers)
+- [MPLAB® X IDE v6.05](https://www.microchip.com/mplab/mplab-x-ide)
+- [MPLAB® XC32 C/C++ Compiler v4.20](https://www.microchip.com/mplab/compilers)
 - MPLAB® X IDE plug-ins:
-  - MPLAB® Code Configurator (MCC) v5.1.17
+  - MPLAB® Code Configurator (MCC) v5.3.0

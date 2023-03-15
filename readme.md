@@ -15,21 +15,12 @@ This repository contains the MPLAB® Harmony 3 SPI UHF transceiver solutions and
 
 - [Release Notes](./release_notes.md)
 - [MPLAB® Harmony License](Microchip_SLA001.md)
-<!---
-- [MPLAB® Harmony 3 replaceme Wiki](https://github.com/Microchip-MPLAB-Harmony/replaceme/wiki)
-- [MPLAB® Harmony 3 replaceme API Help](https://microchip-mplab-harmony.github.io/replaceme)
---->
 
 # Contents Summary
 
 | Folder    | Description                                   | Link              |
 | ---       | ---                                           | ---               |
 | apps      | Example applications for SPI UHF transceiver  | [apps](./apps)    |
-<!---
-| config    | replaceme module configuration file           |
-| docs      | replaceme library help documentation          |
-| drivers   | Driver/Firmware files for different products  |
---->
 
 
 # ATA8510 EK1 Example
