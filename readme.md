@@ -15,6 +15,8 @@ This repository contains the MPLAB® Harmony 3 SPI UHF transceiver solutions and
 
 - [Release Notes](./release_notes.md)
 - [MPLAB® Harmony License](Microchip_SLA001.md)
+- [MPLAB® Harmony 3 SPI UHF transceiver Wiki](https://github.com/Microchip-MPLAB-Harmony/spi_uhf_transceiver_apps/wiki)
+- [MPLAB® Harmony 3 SPI UHF transceiver API Help](https://microchip-mplab-harmony.github.io/spi_uhf_transceiver_apps)
 
 # Contents Summary
 
