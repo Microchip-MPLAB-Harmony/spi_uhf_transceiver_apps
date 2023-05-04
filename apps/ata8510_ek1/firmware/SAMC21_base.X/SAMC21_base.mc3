@@ -38,7 +38,7 @@
          <string>class com.microchip.mcc.harmony.HarmonyModule</string>
       </entry>
       <entry>
-         <string>spi_ata5831</string>
+         <string>spi_ata8510</string>
          <string>class com.microchip.mcc.harmony.HarmonyModule</string>
       </entry>
       <entry>
@@ -2885,7 +2885,8 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="!@#harmonyUserData"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;UserData&gt;
   &lt;UserData dnOrder=&quot;0&quot;&gt;
-    &lt;ComponentGraph dnOrder=&quot;0&quot; id=&quot;__ROOTVIEW&quot;&gt;
+    &lt;GraphSettings canvasHeight=&quot;542&quot; canvasWidth=&quot;659&quot; dnOrder=&quot;0&quot;/&gt;
+    &lt;ComponentGraph dnOrder=&quot;1&quot; id=&quot;__ROOTVIEW&quot;&gt;
       &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
         &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;HarmonyCore&quot; x=&quot;180&quot; y=&quot;20&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;cmsis&quot; x=&quot;23&quot; y=&quot;228&quot;/&gt;
@@ -2896,13 +2897,12 @@
         &lt;ElementPosition dnOrder=&quot;6&quot; id=&quot;sercom1&quot; x=&quot;314&quot; y=&quot;177&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;7&quot; id=&quot;sercom4&quot; x=&quot;315&quot; y=&quot;256&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;8&quot; id=&quot;sercom5&quot; x=&quot;317&quot; y=&quot;382&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;9&quot; id=&quot;spi_ata5831&quot; x=&quot;476&quot; y=&quot;177&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;9&quot; id=&quot;spi_ata8510&quot; x=&quot;464&quot; y=&quot;177&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;10&quot; id=&quot;sys_time&quot; x=&quot;360&quot; y=&quot;20&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;11&quot; id=&quot;tc0&quot; x=&quot;22&quot; y=&quot;263&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;12&quot; id=&quot;tc2&quot; x=&quot;23&quot; y=&quot;339&quot;/&gt;
       &lt;/ElementPositions&gt;
     &lt;/ComponentGraph&gt;
-    &lt;GraphSettings canvasHeight=&quot;542&quot; canvasWidth=&quot;659&quot; dnOrder=&quot;1&quot;/&gt;
   &lt;/UserData&gt;
 &lt;/UserData&gt;
 </value>
@@ -6297,10 +6297,10 @@
       &lt;DirectCapability dnOrder=&quot;1&quot; id=&quot;SERCOM1_SPI&quot;&gt;
         &lt;Attributes dnOrder=&quot;0&quot;&gt;
           &lt;String dnOrder=&quot;0&quot; id=&quot;targetComponentID&quot;&gt;
-            &lt;Value dnOrder=&quot;0&quot;&gt;spi_ata5831&lt;/Value&gt;
+            &lt;Value dnOrder=&quot;0&quot;&gt;spi_ata8510&lt;/Value&gt;
           &lt;/String&gt;
           &lt;String dnOrder=&quot;1&quot; id=&quot;targetAttachmentID&quot;&gt;
-            &lt;Value dnOrder=&quot;0&quot;&gt;spi_ata5831_SPI_dependency&lt;/Value&gt;
+            &lt;Value dnOrder=&quot;0&quot;&gt;spi_ata8510_SPI_dependency&lt;/Value&gt;
           &lt;/String&gt;
         &lt;/Attributes&gt;
       &lt;/DirectCapability&gt;
@@ -9629,11 +9629,11 @@
 </value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="spi_ata5831" name="!@#harmonyAttachmentState"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;spi_ata5831&gt;
-  &lt;spi_ata5831 dnOrder=&quot;0&quot;&gt;
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="spi_ata8510" name="!@#harmonyAttachmentState"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;spi_ata8510&gt;
+  &lt;spi_ata8510 dnOrder=&quot;0&quot;&gt;
     &lt;Attachments dnOrder=&quot;0&quot;&gt;
-      &lt;DirectDependency dnOrder=&quot;0&quot; id=&quot;spi_ata5831_SPI_dependency&quot;&gt;
+      &lt;DirectDependency dnOrder=&quot;0&quot; id=&quot;spi_ata8510_SPI_dependency&quot;&gt;
         &lt;Attributes dnOrder=&quot;0&quot;&gt;
           &lt;String dnOrder=&quot;0&quot; id=&quot;targetComponentID&quot;&gt;
             &lt;Value dnOrder=&quot;0&quot;&gt;sercom1&lt;/Value&gt;
@@ -9644,56 +9644,56 @@
         &lt;/Attributes&gt;
       &lt;/DirectDependency&gt;
     &lt;/Attachments&gt;
-  &lt;/spi_ata5831&gt;
-&lt;/spi_ata5831&gt;
+  &lt;/spi_ata8510&gt;
+&lt;/spi_ata8510&gt;
 </value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="spi_ata5831" name="#&amp;__MCC_Group_Parrent_id"/>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="spi_ata8510" name="#&amp;__MCC_Group_Parrent_id"/>
          <value>__ROOTVIEW</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="spi_ata5831" name="SPI_ATA5831_CHIP_SELECT_PIN"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;spi_ata5831&gt;
-  &lt;spi_ata5831 dnOrder=&quot;0&quot; id=&quot;SPI_ATA5831_CHIP_SELECT_PIN&quot;&gt;
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="spi_ata8510" name="SPI_ATA8510_CHIP_SELECT_PIN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;spi_ata8510&gt;
+  &lt;spi_ata8510 dnOrder=&quot;0&quot; id=&quot;SPI_ATA8510_CHIP_SELECT_PIN&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;User dnOrder=&quot;0&quot; value=&quot;17&quot;/&gt;
     &lt;/Values&gt;
-  &lt;/spi_ata5831&gt;
-&lt;/spi_ata5831&gt;
+  &lt;/spi_ata8510&gt;
+&lt;/spi_ata8510&gt;
 </value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="spi_ata5831" name="SPI_ATA5831_NPWRON1_PIN"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;spi_ata5831&gt;
-  &lt;spi_ata5831 dnOrder=&quot;0&quot; id=&quot;SPI_ATA5831_NPWRON1_PIN&quot;&gt;
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="spi_ata8510" name="SPI_ATA8510_NPWRON1_PIN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;spi_ata8510&gt;
+  &lt;spi_ata8510 dnOrder=&quot;0&quot; id=&quot;SPI_ATA8510_NPWRON1_PIN&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;User dnOrder=&quot;0&quot; value=&quot;20&quot;/&gt;
     &lt;/Values&gt;
-  &lt;/spi_ata5831&gt;
-&lt;/spi_ata5831&gt;
+  &lt;/spi_ata8510&gt;
+&lt;/spi_ata8510&gt;
 </value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="spi_ata5831" name="SPI_ATA5831_NRESET_PIN"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;spi_ata5831&gt;
-  &lt;spi_ata5831 dnOrder=&quot;0&quot; id=&quot;SPI_ATA5831_NRESET_PIN&quot;&gt;
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="spi_ata8510" name="SPI_ATA8510_NRESET_PIN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;spi_ata8510&gt;
+  &lt;spi_ata8510 dnOrder=&quot;0&quot; id=&quot;SPI_ATA8510_NRESET_PIN&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;User dnOrder=&quot;0&quot; value=&quot;21&quot;/&gt;
     &lt;/Values&gt;
-  &lt;/spi_ata5831&gt;
-&lt;/spi_ata5831&gt;
+  &lt;/spi_ata8510&gt;
+&lt;/spi_ata8510&gt;
 </value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="spi_ata5831" name="SPI_ATA5831_PLIB"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;spi_ata5831&gt;
-  &lt;spi_ata5831 dnOrder=&quot;0&quot; id=&quot;SPI_ATA5831_PLIB&quot;&gt;
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="spi_ata8510" name="SPI_ATA8510_PLIB"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;spi_ata8510&gt;
+  &lt;spi_ata8510 dnOrder=&quot;0&quot; id=&quot;SPI_ATA8510_PLIB&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;spi_ata5831&quot; value=&quot;SERCOM1&quot;/&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;spi_ata8510&quot; value=&quot;SERCOM1&quot;/&gt;
     &lt;/Values&gt;
-  &lt;/spi_ata5831&gt;
-&lt;/spi_ata5831&gt;
+  &lt;/spi_ata8510&gt;
+&lt;/spi_ata8510&gt;
 </value>
       </entry>
       <entry>
@@ -11128,10 +11128,6 @@
          <hash>dc0977de3b63a7f7656d1109f6acf5c07c993a5f35407cb91322e35dc983675f</hash>
       </entry>
       <entry>
-         <file>..\src\config\default\spi\ata5831\spi_ata5831.h</file>
-         <hash>693c065d3b37a69670e78974f45c20615df0ae5edf07d9d9e269ee0258c055d4</hash>
-      </entry>
-      <entry>
          <file>..\src\packs\ATSAMC21J18A_DFP\component\evsys.h</file>
          <hash>31524ca0584c9bc0666c320e37cdfe2d195ad55d2f4026738360e77beb2c22f0</hash>
       </entry>
@@ -11236,10 +11232,6 @@
          <hash>0ffcf2109c1550773094e211109c77b5ce60b5d264766d8e479d6ed2104425b8</hash>
       </entry>
       <entry>
-         <file>..\src\config\default\spi\ata5831\src\spi_ata5831.c</file>
-         <hash>bff62ac05f9ef6b4c138745d6dc2901f5f89a6d7921af65960e5ec099986a818</hash>
-      </entry>
-      <entry>
          <file>..\src\config\default\peripheral\clock\plib_clock.c</file>
          <hash>292a4bd03a961ed1d81e75840b3e3eca94f0bf1b36edc5fc58abec40ab1f0d23</hash>
       </entry>
@@ -11262,6 +11254,10 @@
       <entry>
          <file>..\src\packs\ATSAMC21J18A_DFP\instance\wdt.h</file>
          <hash>6a3d811efd0f749d1864ad9cf1777c35ba575b0d13ebfbad9a268a04a47e1e90</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\default\spi\ata8510\src\spi_ata8510.c</file>
+         <hash>08fd77be69e4963f7172ad87df98d74a500a5189849478e7b2ffacea86f6764c</hash>
       </entry>
       <entry>
          <file>..\src\config\default\peripheral\port\plib_port.h</file>
@@ -11342,10 +11338,6 @@
       <entry>
          <file>..\src\packs\ATSAMC21J18A_DFP\instance\nvmctrl.h</file>
          <hash>b5d30ac44fce76d81ac1b96e1254388af4f2b62b503b69f1a0f64cf65e74977c</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\default\spi\ata5831\src\spi_ata5831_local.h</file>
-         <hash>ba2a2f76e50fea32da3105eeed6de5bdb6fb3eaaaa923708824bacbeb15a0fa6</hash>
       </entry>
       <entry>
          <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_armclang.h</file>
@@ -11484,6 +11476,10 @@
          <hash>cd8b2bb2f2210594897604856ba03cfdfcd322f34202c1d31abe8dd1ae5e1bf1</hash>
       </entry>
       <entry>
+         <file>..\src\config\default\spi\ata8510\spi_ata8510.h</file>
+         <hash>7707b5f202ebbe2822ea01f71328120ffe165d62eafd001164b6290fda1052b4</hash>
+      </entry>
+      <entry>
          <file>..\src\packs\ATSAMC21J18A_DFP\instance\supc.h</file>
          <hash>067c041bb4218d55e12dffcc255951d5389f8971bb61ccab9d387f8d7810d94e</hash>
       </entry>
@@ -11612,6 +11608,10 @@
          <hash>88bb2e34c939601b5b7ad076556e3ee0fcedf388436b8cddb6d6fd3e9d07472f</hash>
       </entry>
       <entry>
+         <file>..\src\config\default\spi\ata8510\src\spi_ata8510_local.h</file>
+         <hash>b00124b1fe7f5bbd5bbe05d7287109a9da9b7e4e807426fce9e9109e4864b70f</hash>
+      </entry>
+      <entry>
          <file>..\src\packs\ATSAMC21J18A_DFP\instance\ccl.h</file>
          <hash>6ac447f4ee6ce0334f7577abe5c3a55c5b4ce6eb903c934ad9344260240df635</hash>
       </entry>
@@ -11637,7 +11637,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\configuration.h</file>
-         <hash>e0d09975fe7507785f53abc3d0fc35e0229f43873a5ec95cc82260746ec0f3e2</hash>
+         <hash>818b56a4be5dec6f935cde6179cd18932ca9ccc51b9230cf8857fa8cbdd27aa8</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMC21J18A_DFP\component\pac.h</file>
@@ -11689,7 +11689,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\definitions.h</file>
-         <hash>735a2ef430dd4ccf79026cc047401e10367911ec0e3c3ac09f649894cf78c987</hash>
+         <hash>193a8cc481ca08e6f64978b3a228e061e2746772733d0304be1e66fcd1bacf18</hash>
       </entry>
       <entry>
          <file>..\src\config\default\peripheral\sercom\spi_master\plib_sercom_spi_master_common.h</file>

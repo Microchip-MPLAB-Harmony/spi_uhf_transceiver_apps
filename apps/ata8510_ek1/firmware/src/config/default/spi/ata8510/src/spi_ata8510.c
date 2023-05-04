@@ -1,17 +1,17 @@
 /******************************************************************************
-  SPI_ATA5831
+  SPI_ATA8510
 
   Company:
     Microchip Technology Inc.
 
   File Name:
-    spi_ata5831.c
+    spi_ata8510.c
 
   Summary:
-    ATA5831 SPI Command Set Implementation
+    ATA8510 SPI Command Set Implementation
 
   Description:
-    The ATA5831 SPI Command Set provides an interface to control and interact
+    The ATA8510 SPI Command Set provides an interface to control and interact
     with the external UHF transceiver.
 *******************************************************************************/
 
@@ -50,8 +50,8 @@
 #include <stdio.h>
 #include "definitions.h"
 #include "configuration.h"
-#include "spi/ata5831/spi_ata5831.h"
-#include "spi/ata5831/src/spi_ata5831_local.h"
+#include "spi/ata8510/spi_ata8510.h"
+#include "spi/ata8510/src/spi_ata8510_local.h"
 
 // *****************************************************************************
 // *****************************************************************************
@@ -65,13 +65,13 @@ static uint8_t g_rx_buf[UHF_SPI_BUFFER_LENGTH];
 
 // *****************************************************************************
 // *****************************************************************************
-// Section: SPI_ATA5831 Local Functions
+// Section: SPI_ATA8510 Local Functions
 // *****************************************************************************
 // *****************************************************************************
 
 // *****************************************************************************
 // *****************************************************************************
-// Section: SPI_ATA5831 Global Functions
+// Section: SPI_ATA8510 Global Functions
 // *****************************************************************************
 // *****************************************************************************
 

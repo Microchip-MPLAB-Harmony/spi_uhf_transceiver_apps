@@ -1,17 +1,17 @@
 /*******************************************************************************
-  SPI_ATA5831
+  SPI_ATA8510
 
   Company:
     Microchip Technology Inc.
 
   File Name:
-    spi_ata5831.h
+    spi_ata8510.h
 
   Summary:
-    ATA5831 SPI Command Set header
+    ATA8510 SPI Command Set header
 
   Description:
-    The ATA5831 SPI Command Set provides an interface to control and interact
+    The ATA8510 SPI Command Set provides an interface to control and interact
     with the external UHF transceiver.
 *******************************************************************************/
 
@@ -40,8 +40,8 @@
 *******************************************************************************/
 //DOM-IGNORE-END
 
-#ifndef _SPI_ATA5831_H
-#define _SPI_ATA5831_H
+#ifndef _SPI_ATA8510_H
+#define _SPI_ATA8510_H
 
 // *****************************************************************************
 // *****************************************************************************
@@ -77,7 +77,7 @@ typedef struct events_struct_t {
 
 // *****************************************************************************
 // *****************************************************************************
-// Section: SPI_ATA5831 Module Interface Routines
+// Section: SPI_ATA8510 Module Interface Routines
 // *****************************************************************************
 // *****************************************************************************
 
@@ -619,7 +619,7 @@ extern events_struct_t g_events;
 }
 #endif
 
-#endif // #ifndef _SPI_ATA5831_H
+#endif // #ifndef _SPI_ATA8510_H
 /*******************************************************************************
  End of File
 */

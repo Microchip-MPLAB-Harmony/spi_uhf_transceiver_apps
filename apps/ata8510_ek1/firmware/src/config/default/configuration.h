@@ -92,7 +92,7 @@ extern "C" {
 // Section: Driver Configuration
 // *****************************************************************************
 // *****************************************************************************
-/* ATA5831 Driver Configuration Options */
+/* ATA8510 Driver Configuration Options */
     /* UHF SPI SERCOM mapping */
     #define UHF_SPI_TRANSFER                SERCOM1_SPI_WriteRead
     /* UHF SPI Chip Select mapping */

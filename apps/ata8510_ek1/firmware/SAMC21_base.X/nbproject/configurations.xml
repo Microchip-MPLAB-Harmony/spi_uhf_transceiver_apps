@@ -52,9 +52,9 @@
             </logicalFolder>
           </logicalFolder>
           <logicalFolder name="spi" displayName="spi" projectFiles="true">
-            <logicalFolder name="spi_ata5831" displayName="spi_ata5831" projectFiles="true">
-              <itemPath>../src/config/default/spi/ata5831/src/spi_ata5831_local.h</itemPath>
-              <itemPath>../src/config/default/spi/ata5831/spi_ata5831.h</itemPath>
+            <logicalFolder name="spi_ata8510" displayName="spi_ata8510" projectFiles="true">
+              <itemPath>../src/config/default/spi/ata8510/spi_ata8510.h</itemPath>
+              <itemPath>../src/config/default/spi/ata8510/src/spi_ata8510_local.h</itemPath>
             </logicalFolder>
           </logicalFolder>
           <logicalFolder name="system" displayName="system" projectFiles="true">
@@ -251,8 +251,8 @@
             </logicalFolder>
           </logicalFolder>
           <logicalFolder name="spi" displayName="spi" projectFiles="true">
-            <logicalFolder name="spi_ata5831" displayName="spi_ata5831" projectFiles="true">
-              <itemPath>../src/config/default/spi/ata5831/src/spi_ata5831.c</itemPath>
+            <logicalFolder name="spi_ata8510" displayName="spi_ata8510" projectFiles="true">
+              <itemPath>../src/config/default/spi/ata8510/src/spi_ata8510.c</itemPath>
             </logicalFolder>
           </logicalFolder>
           <logicalFolder name="stdio" displayName="stdio" projectFiles="true">

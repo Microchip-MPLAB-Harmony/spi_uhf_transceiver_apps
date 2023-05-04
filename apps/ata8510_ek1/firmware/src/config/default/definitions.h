@@ -60,7 +60,7 @@
 #include "peripheral/tc/plib_tc0.h"
 #include "peripheral/tc/plib_tc2.h"
 #include "system/time/sys_time.h"
-#include "spi/ata5831/spi_ata5831.h"
+#include "spi/ata8510/spi_ata8510.h"
 #include "system/int/sys_int.h"
 #include "system/ports/sys_ports.h"
 #include "osal/osal.h"

@@ -1,14 +1,14 @@
 /*******************************************************************************
-  SPI_ATA5831
+  SPI_ATA8510
 
   Company:
     Microchip Technology Inc.
 
   File Name:
-    spi_ata5831_local.h
+    spi_ata8510_local.h
 
   Summary:
-    ATA5831 Command Set Local Data Structures
+    ATA8510 Command Set Local Data Structures
 
   Description:
     Driver Local Data Structures for the external UHF transceiver.
@@ -39,8 +39,8 @@
 *******************************************************************************/
 //DOM-IGNORE-END
 
-#ifndef _SPI_ATA5831_LOCAL_H
-#define _SPI_ATA5831_LOCAL_H
+#ifndef _SPI_ATA8510_LOCAL_H
+#define _SPI_ATA8510_LOCAL_H
 
 // *****************************************************************************
 // *****************************************************************************
@@ -59,7 +59,7 @@
 #define UHF_SPI_T1 18   // us - Time from AVR active to beginning of first telegram byte
 #define UHF_SPI_T2 0    // us - Time to shift in one SPI-byte with SCK
 #define UHF_SPI_T3 0    // us - Pause between two bytes. Can be any length including 0 us
-#define UHF_SPI_T4 35   // us - Time for ATA5831 to handle last byte
+#define UHF_SPI_T4 35   // us - Time for ATA8510 to handle last byte
 #define UHF_SPI_T5 16   // us - SPI idle time telegram
 
 /* SPI buffer length */
@@ -96,4 +96,4 @@
 #define UHF_SPI_CMD_READ_RX_BUFFER_BYTE_INT     (0x1D)
 #define UHF_SPI_CMD_READ_RSSI_BUFFER_BYTE_INT   (0x1E)
 
-#endif //#ifndef _SPI_ATA5831_LOCAL_H
+#endif //#ifndef _SPI_ATA8510_LOCAL_H
