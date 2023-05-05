@@ -16,5 +16,5 @@ modules:
     - {name: "csp", version: "v3.14.0"}
     - {name: "core", version: "v3.11.1"}
     - {name: "dev_packs", version: "v3.14.0"}
-    - {name: "spi_uhf_transceiver", version: "unknown"}
+    - {name: "spi_uhf_transceiver", version: "v1.0.0"}
 
