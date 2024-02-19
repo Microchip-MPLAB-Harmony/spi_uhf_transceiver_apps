@@ -3,6 +3,11 @@
 
 # Microchip MPLAB® Harmony 3 Release Notes
 
+## Harmony 3 SPI UHF transceiver application examples v1.0.1
+### Bug Fix
+
+- Fix of dependency version string in package.yml
+
 ## Harmony 3 SPI UHF transceiver application examples for SAM C21 family v1.0.0
 
 ### Development kit and demo application support
